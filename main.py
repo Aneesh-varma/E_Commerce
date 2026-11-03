@@ -1,10 +1,9 @@
 import random
-import SERVICES
 from SERVICES.auth import *
-from SERVICES.ROLES.customer import *
-from SERVICES.ROLES.manager import *
-from SERVICES.ROLES.employee import *
-from SERVICES.ROLES.admin import *
+from ROLES.customer import *
+from ROLES.manager import *
+from ROLES.employee import *
+from ROLES.admin import *
 
 print(" ")
 a = random.choice(["Welcome to the STAR MALL portal.Please select your role to sign in",

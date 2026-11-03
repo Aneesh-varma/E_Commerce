@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02d4918f-51bf-4ff3-b8bb-913c10910f35" name="Changes" comment="" />
+    <list default="true" id="02d4918f-51bf-4ff3-b8bb-913c10910f35" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DATABASE/db_management.py" beforeDir="false" afterPath="$PROJECT_DIR$/DATABASE/db_management.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DATABASE/ecommerce.db" beforeDir="false" afterPath="$PROJECT_DIR$/DATABASE/ecommerce.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/REPOSITORIES/customer.py" beforeDir="false" afterPath="$PROJECT_DIR$/REPOSITORIES/customer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SERVICES/ROLES/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/ROLES/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SERVICES/ROLES/customer.py" beforeDir="false" afterPath="$PROJECT_DIR$/ROLES/customer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SERVICES/ROLES/employee.py" beforeDir="false" afterPath="$PROJECT_DIR$/ROLES/employee.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SERVICES/ROLES/manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/ROLES/manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +30,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Aneesh-varma&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Aneesh-varma/E_Commerce.git&quot;,
+    &quot;accountId&quot;: &quot;52fc1fa9-446f-4c13-96be-9aea524178bc&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -28,21 +50,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.customer.executor": "Run",
-    "Python.db_management.executor": "Run",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/Users/sayya/OneDrive/Desktop/AI_ML_Projects/E_Commerce",
-    "to.speed.mode.migration.done": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.customer.executor&quot;: &quot;Run&quot;,
+    &quot;Python.db_management.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/sayya/OneDrive/Desktop/AI_ML_Projects/E_Commerce&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sayya\OneDrive\Desktop\AI_ML_Projects\E_Commerce" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="E_Commerce" />

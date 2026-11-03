@@ -12,7 +12,7 @@ c.execute('''CREATE TABLE IF NOT EXISTS customers(
           cust_password VARCHAR
           )''')
 
-#c.execute("INSERT INTO customers VALUES (1,'Aneesh','134234323','ndjendjen23')")
+#c.execute("INSERT INTO customers VALUES (1,'Aneesh','134234324','ndjendjen23')")
 
 #MANAGERS TABLE
 c.execute('''CREATE TABLE IF NOT EXISTS managers(
@@ -47,8 +47,30 @@ c.execute("INSERT INTO admins VALUES (101,'SURESH','134234323','ndjendjen23')")
 
 
 
+#Product_Category_Table
+
+c.execute('''CREATE TABLE IF NOT EXISTS product_category(
+          category_id INTEGER PRIMARY KEY,
+          category_name TEXT,
+          )''')
 
 
+#Product_Sub-Category_Table
+
+c.execute('''CREATE TABLE IF NOT EXISTS product_subcategory(
+          subcategory_id INTEGER PRIMARY KEY,
+          category_id INTEGER,
+          subcategory_name TEXT,
+          )''')
+
+#Products_Table
+
+c.execute('''CREATE TABLE IF NOT EXISTS products(
+          product_id INTEGER PRIMARY KEY,
+          subcategory_id INTEGER,
+          product_name TEXT,
+          QNT INTEGER,
+          )''')
 
 
 
