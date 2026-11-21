@@ -1,4 +1,5 @@
 from REPOSITORIES.customer import *
+from SERVICES.products import *
 
 def customer_portal(cus_details):
     print("HELLO,",cus_details[1])
@@ -60,20 +61,22 @@ def cust_profile(cus_details):
 def cust_shopping():
     while True:
         print("1.TO VIEW PRODUCTS\n2.TO VIEW YOUR CART\n3.TO VIEW YOUR ORDERS\n4.TO GO BACK")
-        cust_choice = input("ENTER YOUR CHOICE: ")
+        cust_choice = int(input("ENTER YOUR CHOICE: "))
         if cust_choice == 1:
-            print("1.TO SHOP ELECTRONICS\n2.TO SHOP FASHION\n3.TO SHOP KITCHEN/HOME APPLIANCES\n4.TO GO BACK")
-            cat_choice = input("ENTER YOUR CHOICE: ")
-            if cat_choice == 1:
-                pass
-            elif cat_choice == 2:
-                pass
-            elif cat_choice == 3:
-                pass
-            elif cat_choice == 4:
-                pass
-            else:
-                print("INVALID CHOICE")
+            while True:
+                print("1.TO SHOP ELECTRONICS\n2.TO SHOP FASHION\n3.TO SHOP KITCHEN/HOME APPLIANCES\n4.TO GO BACK")
+                cat_choice = int(input("ENTER YOUR CHOICE: "))
+                if cat_choice == 1:
+                    electronics()
+                elif cat_choice == 2:
+                    fashion()
+                elif cat_choice == 3:
+                    kitchen_home()
+                elif cat_choice == 4:
+                    break
+                else:
+                    print("INVALID CHOICE")
+
 
         elif cust_choice == 2:
             pass
@@ -83,7 +86,6 @@ def cust_shopping():
             return
         else:
             print("INVALID CHOICE")
-
 
 
 
