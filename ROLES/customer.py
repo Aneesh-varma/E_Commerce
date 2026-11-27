@@ -1,5 +1,7 @@
 from REPOSITORIES.customer import *
 from SERVICES.products import *
+from SERVICES.cart import *
+from SERVICES.order import *
 
 def customer_portal(cus_details):
     print("HELLO,",cus_details[1])
@@ -9,7 +11,7 @@ def customer_portal(cus_details):
         if choice == 1:
             cust_profile(cus_details)
         elif choice == 2:
-            cust_shopping()
+            cust_shopping(cus_details)
         elif choice == 3:
             cust_o_history()
         elif choice == 4:
@@ -58,7 +60,7 @@ def cust_profile(cus_details):
 
 
 
-def cust_shopping():
+def cust_shopping(cus_details):
     while True:
         print("1.TO VIEW PRODUCTS\n2.TO VIEW YOUR CART\n3.TO VIEW YOUR ORDERS\n4.TO GO BACK")
         cust_choice = int(input("ENTER YOUR CHOICE: "))
@@ -67,11 +69,11 @@ def cust_shopping():
                 print("1.TO SHOP ELECTRONICS\n2.TO SHOP FASHION\n3.TO SHOP KITCHEN/HOME APPLIANCES\n4.TO GO BACK")
                 cat_choice = int(input("ENTER YOUR CHOICE: "))
                 if cat_choice == 1:
-                    electronics()
+                    electronics(cus_details)
                 elif cat_choice == 2:
-                    fashion()
+                    fashion(cus_details)
                 elif cat_choice == 3:
-                    kitchen_home()
+                    kitchen_home(cus_details)
                 elif cat_choice == 4:
                     break
                 else:
@@ -79,9 +81,38 @@ def cust_shopping():
 
 
         elif cust_choice == 2:
-            pass
+            print("#                     YOUR CART                              #")
+            c_details=cart_view(cus_details)
+            for i in c_details:
+                print(i)
+            while True:
+                print("1.TO REMOVE ITEMS FROM THE CART\n2.TO ADD ITEMS TO THE CART\n3.TO GO FOR ORDER\n4.TO GO BACK")
+                ca_choice = int(input("ENTER YOUR CHOICE: "))
+                if ca_choice == 1:
+                    cart_removal(cus_details)
+                elif ca_choice == 2:
+                    while True:
+                        print("1.TO SHOP ELECTRONICS\n2.TO SHOP FASHION\n3.TO SHOP KITCHEN/HOME APPLIANCES\n4.TO GO BACK")
+                        cat_choice = int(input("ENTER YOUR CHOICE: "))
+                        if cat_choice == 1:
+                            electronics(cus_details)
+                        elif cat_choice == 2:
+                            fashion(cus_details)
+                        elif cat_choice == 3:
+                            kitchen_home(cus_details)
+                        elif cat_choice == 4:
+                            break
+                        else:
+                            print("INVALID CHOICE")
+                elif ca_choice == 3:
+                    order_management(cus_details)
+                elif ca_choice == 4:
+                    break
+                else:
+                    print("INVALID CHOICE")
+
         elif cust_choice == 3:
-            pass
+            order_view(cus_details)
         elif cust_choice == 4:
             return
         else:

@@ -3,7 +3,7 @@ import sqlite3 as sql
 conn = sql.connect("ecommerce.db")
 c = conn.cursor()
 
-
+""" 
 # CUSTOMERS TABLE
 c.execute('''CREATE TABLE IF NOT EXISTS customers(
           cust_id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -206,15 +206,27 @@ c.execute("INSERT INTO products VALUES (65,13,'Microfiber Blanket',20,899,'Light
 
 '''
 
+
+
+
+
 #CART_TABLE
 
 c.execute('''CREATE TABLE IF NOT EXISTS cust_cart(
-        cust_id INTEGER PRIMARY KEY,
-        cat_id INTEGER UNIQUE,
-        subcategory_id INTEGER UNIQUE,
-        product_id INTEGER UNIQUE,
+        cust_id INTEGER,
+        cust_name TEXT,
+        cat_name TEXT,
+        subcategory_name TEXT,
+        product_name INTEGER TEXT,
+        product_price REAL,
+        product_description TEXT,
         qnt INTEGER
         )''')
+
+
+
+
+
 
 c.execute('''SELECT * FROM products''')
 for row in c.fetchall():
@@ -227,6 +239,36 @@ for row in c.fetchall():
 c.execute('''SELECT * FROM product_category''')
 for row in c.fetchall():
     print(row)
+
+
+
+
+
+
+"""
+
+"""
+c.execute('''CREATE TABLE IF NOT EXISTS orders(
+         cust_id INTEGER,
+         cust_name TEXT,
+         cust_phno TEXT,
+         cust_address TEXT,
+         product_name INTEGER,
+         product_price REAL,
+         product_description TEXT,
+         product_qnt INTEGER,
+         status TEXT
+         )'''
+        )
+"""
+"""
+c.execute('''CREATE TABLE IF NOT EXISTS cust_addresses(
+             cust_id INTEGER,
+             cust_name TEXT,
+             cust_addresses TEXT
+             )'''
+          )
+"""
 
 
 conn.commit()

@@ -43,7 +43,7 @@ def customer_signin():
                 customer_signup()
                 break
             elif o_change.upper() == "NO":
-                pass
+                break
             else:
                 print("INVALID CHOICE")
 
